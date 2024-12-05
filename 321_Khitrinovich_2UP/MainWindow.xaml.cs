@@ -30,7 +30,10 @@ namespace _321_Khitrinovich_2UP
         {
             MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите выйти?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-            if (result == MessageBoxResult.No) { e.Cancel = true; }
+            if (result == MessageBoxResult.No) 
+            { 
+                e.Cancel = true; 
+            }
         }
         private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
         {

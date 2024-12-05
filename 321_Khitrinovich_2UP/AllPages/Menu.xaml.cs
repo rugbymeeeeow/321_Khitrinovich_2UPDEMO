@@ -24,5 +24,15 @@ namespace _321_Khitrinovich_2UP.AllPages
         {
             InitializeComponent();
         }
+
+        private void WatchPartnersButtonClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ListPartners());
+        }
+
+        private void WatchHistoryButtonClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new HistoryRealization());
+        }
     }
 }

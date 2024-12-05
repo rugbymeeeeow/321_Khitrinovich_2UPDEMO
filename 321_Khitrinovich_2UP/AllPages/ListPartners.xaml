@@ -6,9 +6,47 @@
       xmlns:local="clr-namespace:_321_Khitrinovich_2UP.AllPages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ListPartners">
+      IsVisibleChanged="PageIsVisibleChanged"
+      Title="Просмотр списка партнеров">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListView Name="ListUser" Grid.Row="1" SelectionChanged="ListUserSelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Left" Grid.Column="0" Text="{Binding Type}" FontSize="18" FontWeight="Bold" Margin="0,0,133,0"/>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Left" Width="180" Grid.Column="0" HorizontalAlignment="Left" FontSize="18" Text="{Binding NamePartners}" Margin="48,0,0,0"/>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Left" Width="10" Grid.Column="0" HorizontalAlignment="Left" FontSize="18" Text="|" Margin="38,0,0,0"/>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Left" Width="370" Grid.Row="2" HorizontalAlignment="Left" FontSize="18" Text="{Binding Director}"/>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Left" Width="200" Grid.Row="3" HorizontalAlignment="Left" FontSize="18" Text="{Binding Contacts}"/>
+                        <TextBlock VerticalAlignment="Center" TextAlignment="Left" Width="200" Grid.Row="4" HorizontalAlignment="Left" FontSize="18" Text="{Binding Raiting}"/>
+
+                        <TextBlock VerticalAlignment="Top" TextAlignment="Right" Width="200" Grid.Row="2" HorizontalAlignment="Left" FontSize="18" Text="{Binding Discount, StringFormat={}{0}%}" Margin="247,19,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button ToolTip="Кнопка для добавления партрнера" Content="Добавить партнера" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,20,0" Click="AddPartnerButton_Click" Height="45"/>
+
     </Grid>
 </Page>

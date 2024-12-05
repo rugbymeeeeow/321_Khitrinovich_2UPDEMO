@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_321_Khitrinovich_2UP"
         mc:Ignorable="d"
-        Title="Приложение Мастер Пол" Height="450" Width="800" Closing="CloseWindow">
+        Title="Приложение Мастер Пол" Height="850" Width="1200" Closing="CloseWindow">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="45*"></RowDefinition>
-            <RowDefinition Height="331*"></RowDefinition>
-            <RowDefinition Height="58*"></RowDefinition>
+            <RowDefinition Height="360*"></RowDefinition>
+            <RowDefinition Height="29*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Margin="10,12,670,10" Content="Назад" x:Name="BackButton" Click="BackButtonClick"></Button>
-        <Frame Source="AllPages/Menu.xaml" Name="NavigationService" Margin="0,45,0,0" BorderThickness="2" Grid.RowSpan="2"  Navigated="MainFrame_OnNavigated" NavigationUIVisibility="Hidden"/>
+        <Frame Source="AllPages/Menu.xaml" Name="NavigationService" BorderThickness="2"  Navigated="MainFrame_OnNavigated" NavigationUIVisibility="Hidden" Grid.Row="1" Margin="0,15,0,14"/>
+        <Button ToolTip="Кнопка назад" Margin="10,0,0,10" Content="Назад" x:Name="BackButton" Click="BackButtonClick" Height="49" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="251"></Button>
     </Grid>
 </Window>

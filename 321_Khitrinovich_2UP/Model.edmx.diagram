@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b27011e9bd8e48ebb39027f2270928d6" Name="Diagram1">
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.MaterialType" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.PartnerProducts" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.Partners" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.ProductType" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.Roles" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UP2KhitrinovichModel.Workers" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="UP2KhitrinovichModel.FK__PartnerPr__DateP__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="UP2KhitrinovichModel.FK__PartnerPr__NameO__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="UP2KhitrinovichModel.FK__Products__TypePr__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="UP2KhitrinovichModel.FK__Workers__RoleId__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
