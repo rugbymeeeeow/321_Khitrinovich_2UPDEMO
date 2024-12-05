@@ -1,0 +1,20 @@
+﻿<Page x:Class="_321_Khitrinovich_2UP.AllPages.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_321_Khitrinovich_2UP.AllPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Меню">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"></RowDefinition>
+            <RowDefinition Height="293*"></RowDefinition>
+            <RowDefinition Height="84*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Margin="282,79,282,171" Grid.Row="1"></Button>
+        <Button Margin="282,167,282,90" Grid.Row="1"></Button>
+    </Grid>
+</Page>

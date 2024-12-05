@@ -1,0 +1,21 @@
+﻿<Window x:Class="_321_Khitrinovich_2UP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_321_Khitrinovich_2UP"
+        mc:Ignorable="d"
+        Title="Приложение Мастер Пол" Height="450" Width="800" Closing="CloseWindow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="331*"></RowDefinition>
+            <RowDefinition Height="58*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Margin="10,12,670,10" Content="Назад" x:Name="BackButton" Click="BackButtonClick"></Button>
+        <Frame Source="AllPages/Menu.xaml" Name="NavigationService" Margin="0,45,0,0" BorderThickness="2" Grid.RowSpan="2"  Navigated="MainFrame_OnNavigated" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
